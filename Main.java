@@ -37,6 +37,17 @@ public class Main {
 		job.setMapOutputValueClass(Text.class);
 		job.setNumReduceTasks(10);
 
+		
+		
+		
+		
+		
+		FileInputFormat.addInputPath(job, new Path(args[0]));
+		
+		FileOutputFormat.setOutputPath(job, new Path("Inter_1"));
+		
+		
+		
 	}
 }
 
